@@ -1,0 +1,74 @@
+/* TECH CREATIVE STUDIO - ADMIN PANEL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1424;
+    color: white;
+}
+
+header {
+    background: #111c30;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 2px solid #007bff;
+}
+
+header h1 {
+    color: #00aaff;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #cccccc;
+}
+
+main {
+    padding: 30px;
+}
+
+main h2 {
+    margin-bottom: 25px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #17243a;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #263954;
+}
+
+.card h3 {
+    color: #cccccc;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 32px;
+    font-weight: bold;
+    color: #00aaff;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
